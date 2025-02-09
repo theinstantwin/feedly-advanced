@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Feedly Article Highlighter",
+  "version": "1.0",
+  "description": "Highlight and hide articles in Feedly based on keywords",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "*://*.feedly.com/*"
+  ],
+  "content_scripts": [{
+    "matches": ["*://*.feedly.com/*"],
+    "css": ["styles.css"],
+    "js": ["content.js"]
+  }]
+}
